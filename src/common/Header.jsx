@@ -1,3 +1,12 @@
+// import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+// import { faHomeLg } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+library.add(fab, fas, far)
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -13,7 +22,10 @@ export default function Header() {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
             <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#2b68e0] to-[#e710ea]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"><Link to={'/'}>Home</Link></li>
             <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#2b68e0] to-[#e710ea]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"><Link to={'/about-us'}>About Us</Link></li>
-          
+            <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#2b68e0] to-[#e710ea]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"> 
+                  <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+                  <FontAwesomeIcon icon="fa-regular fa-eye" />
+            </li>
           </ul>
         </div>
        

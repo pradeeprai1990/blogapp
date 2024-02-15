@@ -8,14 +8,7 @@ export default function BlogDetails() {
   let blogID=urlParams.id; //23
   console.log(blogID)  
   let singleBlogDetails=bloglist.filter((v,i)=>v.id==blogID)[0]
-console.log(singleBlogDetails)
-  let n=[10,20,30]
 
-  let f=n.filter((v)=>v==10);
-
-  console.log(f)
-                                               
-  console.log(singleBlogDetails)
   return (
    <div>
         <Header/>
